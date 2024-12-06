@@ -1,5 +1,7 @@
-- url: "https://github.com/hexlet-codebattle/codebattle/issues/2020"
-- url: "https://github.com/hexlet-codebattle/codebattle/issues/2021"
-- url: "https://github.com/hexlet-codebattle/codebattle/issues/2000"
-- url: "https://github.com/hexlet-codebattle/codebattle/issues/1999"
-- url: "https://github.com/hexlet-codebattle/codebattle/issues/2022"
+---
+issues:
+  - url: "https://github.com/hexlet-codebattle/codebattle/issues/2020"
+  - url: "https://github.com/hexlet-codebattle/codebattle/issues/2021"
+  - url: "https://github.com/hexlet-codebattle/codebattle/issues/2000"
+  - url: "https://github.com/hexlet-codebattle/codebattle/issues/1999"
+  - url: "https://github.com/hexlet-codebattle/codebattle/issues/2022"
