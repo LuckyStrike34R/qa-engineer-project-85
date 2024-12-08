@@ -108,6 +108,38 @@
      - Нажать кнопку "Create battle"
   expected-result: |
      Создается игра с ботом
+
+- summary: |
+     Проверка смены ника пользователя 
+  requirement: |
+     - Сайт должен быть разработан с учетом удобства использования и оптимизирован для скорости работы
+  prerequisites: |
+     no-data
+  test-data: |
+     your name - chillingStudent322
+  steps:
+     -  Нажать на ник пользователя   
+     -  Выбрать "Settings"
+     -  Вести тестовые данные в поле "Your name"
+     -  Нажать "Save"
+  expected-result: |
+     Ник пользователя изменился 
+
+- summary: |
+     Проверка смены "Sound type" 
+  requirement: |
+     - Сайт должен быть разработан с учетом удобства использования и оптимизирован для скорости работы
+  prerequisites: |
+     no-data
+  test-data: |
+     no data
+  steps:
+     -  Нажать на ник пользователя   
+     -  Выбрать "Settings"
+     -  Выбрать новый звук в списке "Sound type"(например "Standart")
+     -  Нажать "Save"
+  expected-result: |
+     "Sound type" изменился
  
 - summary: |
      Проверка мобильной версии сайта 
