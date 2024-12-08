@@ -1,6 +1,74 @@
 - summary: |
      Проверка регистрации с корректными данными   
   requirement: |
+     - Проверить форму регистрации и авторизации пользователей
+  prerequisites: |
+     no-data
+  test-data: |
+     - Nickname - abyrvalg322
+     - email - sanek077390@gmail.com
+     - Password - 123qwe123
+     - Password confirmation - 123qwe123
+  steps:
+     - Нажать на кнопку "Sign up"
+     - Ввести данные в поля регистрации согласно тестовым данным
+     - Нажать кнопку "Submit"
+  expected-result: |
+     Пользователь зарегистрирован
+
+- summary: |
+     Проверка регистрации с некорректными данными(хотя бы 1 некорректный параметр, например email)   
+  requirement: |
+     - Проверить форму регистрации и авторизации пользователей
+  prerequisites: |
+     no-data
+  test-data: |
+     - Nickname - triptofan12312413432
+     - email - daitedeneg@nakokos.com
+     - Password - 123qwe123
+     - Password confirmation - 123qwe123
+  steps:
+     - Нажать на кнопку "Sign up"
+     - Ввести данные в поля регистрации согласно тестовым данным
+     - Нажать кнопку "Submit"
+  expected-result: |
+     Ошибка регистрации, пользователь не может быть зарегистрирован
+
+- summary: |
+     Проверка авторизации с корректными данными   
+  requirement: |
+     - Проверить форму регистрации и авторизации пользователей
+  prerequisites: |
+     no-data
+  test-data: |
+     - email - sanek077390@gmail.com
+     - Password - 123qwe123
+  steps:
+     - Нажать на кнопку "Sign in"
+     - Ввести данные в поля авторизации согласно тестовым данным
+     - Нажать кнопку "Submit"
+  expected-result: |
+     Пользователь авторизован
+
+- summary: |
+     Проверка авторизации с некорректными данными(хотя бы 1 некорректный параметр, например - email)   
+  requirement: |
+     - Проверить форму регистрации и авторизации пользователей
+  prerequisites: |
+     no-data
+  test-data: |
+     - email - daitedeneg@nakokos.com
+     - Password - 123qwe123
+  steps:
+     - Нажать на кнопку "Sign in"
+     - Ввести данные в поля авторизации согласно тестовым данным
+     - Нажать кнопку "Submit"
+  expected-result: |
+     Ошибка авторизации, пользователь не может быть авторизован
+
+- summary: |
+     Проверка создания игры c ботом без регистрации 
+  requirement: |
      - Сайт дает возможность создать и подключиться к уже созданной игре
   prerequisites: |
      no-data
@@ -12,7 +80,7 @@
      - Нажать кнопку "Create battle"
   expected-result: |
      Создается игра с ботом
-
+     
 - summary: |
      Проверка создания игры c ботом  
   requirement: |
