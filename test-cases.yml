@@ -93,7 +93,22 @@
      - Нажать кнопку "Create battle"
   expected-result: |
      Создается игра с ботом
-     
+
+- summary: |
+     Проверка создания игры c ботом  
+  requirement: |
+     - Сайт дает возможность создать и подключиться к уже созданной игре
+  prerequisites: |
+     no-data
+  test-data: |
+     no-data
+  steps:
+     - Нажать на кнопку "Create a game"
+     - В появившемся окне выбрать - уровень, бота в противники, время игры, задачу
+     - Нажать кнопку "Create battle"
+  expected-result: |
+     Создается игра с ботом
+ 
 - summary: |
      Проверка мобильной версии сайта 
   requirement: |
